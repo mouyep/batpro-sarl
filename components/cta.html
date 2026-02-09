@@ -1,0 +1,94 @@
+<!-- CTA Banner Component - BAT PRO SARL -->
+<section class="cta-section py-5" style="background: linear-gradient(135deg, #1976D2, #4CAF50);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="cta-content">
+                    <h2 class="text-white fw-bold mb-3" id="ctaTitle">
+                        Prêt à Transformer Votre Vision en Réalité Digitale?
+                    </h2>
+                    <p class="text-white mb-0" id="ctaSubtitle">
+                        Rejoignez nos nombreux clients satisfaits et donnez vie à vos projets technologiques 
+                        avec l'expertise camerounaise et africaine.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-danger btn-lg btn-rounded me-3" id="ctaBtn1">
+                        <i class="fas fa-phone me-2"></i>Parlons-en
+                    </a>
+                    <a href="services.html" class="btn btn-light btn-lg btn-rounded" id="ctaBtn2">
+                        <i class="fas fa-book me-2"></i>Nos Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.cta-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.cta-content h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content p {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-buttons a {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 3rem 0;
+    }
+    
+    .cta-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-buttons {
+        text-align: center;
+    }
+    
+    .cta-buttons a {
+        display: block;
+        margin: 0.5rem auto;
+        width: 200px;
+    }
+}
+</style>

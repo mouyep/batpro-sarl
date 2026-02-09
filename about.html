@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags -->
+    <title>À Propos - BAT PRO SARL</title>
+    <meta name="description" content="Découvrez BAT PRO SARL, entreprise IT camerounaise spécialisée en développement d'applications et transformation digitale.">
+    <meta name="keywords" content="à propos, entreprise, Cameroun, BAT PRO SARL, histoire, mission, vision">
+    <meta name="author" content="BAT PRO SARL">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="À Propos - BAT PRO SARL">
+    <meta property="og:description" content="Votre partenaire technologique de confiance au Cameroun">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://batpro-sarl.com/about.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+    
+    <!-- Hero Section Component -->
+    <div id="hero"></div>
+    
+    <!-- About Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="pe-lg-5">
+                        <h2 class="gradient-text mb-4">Notre Histoire</h2>
+                        <p class="lead mb-4">
+                            Fondée en 2021 à Yaoundé, BAT PRO SARL est née d'une vision simple : 
+                            rendre la technologie accessible et adaptée aux réalités africaines.
+                        </p>
+                        <p class="mb-4">
+                            Nos fondateurs, passionnés par l'innovation et convaincus du potentiel 
+                            du marché camerounais, ont démarré l'entreprise avec une mission claire : 
+                            accompagner la transformation digitale des entreprises et organisations.
+                        </p>
+                        <p>
+                            Aujourd'hui, BAT PRO SARL est reconnue comme un acteur majeur 
+                            du secteur technologique camerounais, avec plus de 150 projets réalisés et 
+                            une cinquantaine de clients satisfaits.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1521737604895-d14cc237911d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Histoire BAT PRO SARL" 
+                         class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+            
+            <!-- Mission, Vision, Valeurs -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="service-card h-100 text-center">
+                        <div class="icon mx-auto mb-3">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Mission</h3>
+                        <p>
+                            Démocratiser l'accès aux technologies digitales en Afrique en créant 
+                            des solutions innovantes, accessibles et adaptées aux besoins locaux.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="service-card h-100 text-center">
+                        <div class="icon mx-auto mb-3">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Vision</h3>
+                        <p>
+                            Devenir le leader technologique de référence en Afrique centrale, 
+                            reconnu pour notre expertise, notre innovation et notre impact social.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="service-card h-100 text-center">
+                        <div class="icon mx-auto mb-3">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Valeurs</h3>
+                        <p>
+                            Intégrité, Innovation, Excellence, Collaboration, et Engagement 
+                            pour le développement durable de notre communauté.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Banner Component -->
+    <div id="cta"></div>
+    
+    <!-- Footer Component -->
+    <div id="footer"></div>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/237653859912?text=Bonjour,%20je%20souhaite%20en%20savoir%20plus%20sur%20votre%20entreprise" 
+       target="_blank" 
+       class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- MDB JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/components.js"></script>
+    <script src="js/emailjs.js"></script>
+    
+    <script>
+        // Initialisation des composants au chargement
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Charger le hero avec le contenu personnalisé
+            await loadHeroSection(
+                'À Propos de<br>BAT PRO SARL',
+                'Découvrez notre histoire, notre mission et nos valeurs qui guident notre action quotidienne.',
+                'Notre Équipe',
+                'Nous Contacter'
+            );
+            
+            // Charger le CTA banner
+            await loadCTABanner(
+                'Découvrez Notre Expertise?',
+                'Notre équipe est prête à transformer vos idées en solutions technologiques performantes.',
+                'Découvrir',
+                'Nous Contacter'
+            );
+        });
+    </script>
+</body>
+</html>

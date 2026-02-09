@@ -1,0 +1,365 @@
+📕 CAHIER D’INSTRUCTIONS TECHNIQUE COMPLET & FINAL
+Site vitrine professionnel – BAT PRO SARL
+✅ 0️⃣ PRINCIPES FONDAMENTAUX DE DÉVELOPPEMENT (OBLIGATOIRES)
+🔧 Architecture modulaire & réutilisation des composants
+
+Le développement du site DOIT IMPÉRATIVEMENT suivre une approche modulaire, afin d’éviter toute duplication inutile de code.
+
+👉 Objectif :
+
+Maintenabilité
+
+Lisibilité
+
+Réutilisation
+
+Évolutivité
+
+📌 Règles strictes à respecter :
+
+Aucun bloc HTML répété inutilement dans plusieurs pages
+
+Les éléments communs doivent être créés une seule fois, puis réutilisés
+
+Utiliser des partials / composants HTML injectés dynamiquement en JavaScript
+
+🔁 Composants réutilisables obligatoires :
+
+Header / Navbar
+
+Footer
+
+Hero section
+
+Cards services
+
+Cards équipe
+
+Cards partenaires
+
+Testimonials carousel
+
+CTA banner
+
+Bouton WhatsApp flottant
+
+Formulaires (contact, devis, carrière)
+
+📌 Méthode recommandée :
+
+Créer des fichiers HTML partiels dans un dossier /components/
+
+Les charger dynamiquement via JavaScript (fetch / innerHTML)
+
+Centraliser les scripts et styles communs
+
+✅ 1️⃣ Informations officielles de l’entreprise
+
+Nom : BAT PRO SARL
+Secteur : Développement d’applications informatiques et services numériques
+Téléphone : +237 653 859 912
+Email support : contact@batpro-sarl.com
+
+Siège social : Yaoundé, quartier Nkolbisson, Cameroun
+Registre de commerce : RC/YAO/20/A/93 du 20/02/2022
+
+📌 Ces informations doivent apparaître :
+
+Dans le footer
+
+Dans la page Contact
+
+Dans la page Mentions légales
+
+2️⃣ Objectif du site
+
+Créer un site vitrine institutionnel moderne, élégant et premium pour une entreprise IT camerounaise.
+
+Le site doit :
+
+Présenter BAT PRO SARL et ses services
+
+Renforcer crédibilité et image professionnelle
+
+Générer des prospects
+
+Permettre contact, devis et candidatures
+
+Valoriser équipe, partenaires et satisfaction client
+
+3️⃣ Contraintes techniques obligatoires
+Élément	Exigence
+Type de site	Site vitrine statique
+Backend	❌ Aucun
+Base de données	❌ Aucune
+CSS	MDBootstrap
+JS	Vanilla JS
+Emails	EmailJS
+Upload CV	EmailJS (Base64)
+Images locales	/assets/
+Images externes	Unsplash, Pexels, Pixabay
+Icônes	Font Awesome, Material Icons
+SEO	HTML5 + meta tags
+Performance	Optimisation obligatoire
+
+
+
+4️⃣ Identité visuelle & UI/UX
+🎨 Couleurs
+
+🔵 Bleu (dominant)
+
+🟢 Vert (accent)
+
+🔴 Rouge (CTA)
+
+🧩 Style
+
+Coins arrondis (12px–30px)
+
+Ombres Material Design
+
+Gradients bleu → vert
+
+Animations légères
+
+Micro-interactions (hover, ripple, scale)
+
+5️⃣ Pages & fonctionnalités (détaillées)
+🏠 Accueil
+
+Hero section (component)
+
+Présentation rapide
+
+Services clés (cards)
+
+Statistiques animées (count-up JS)
+
+Avis clients (carousel MDB)
+
+Partenaires (bandeau défilant)
+
+CTA banner
+
+ℹ️ À propos
+
+Histoire
+
+Mission
+
+Vision
+
+Valeurs
+
+Positionnement camerounais & africain
+
+🧩 Services
+
+Développement web
+
+Développement mobile
+
+Solutions enterprise
+
+Cloud & DevOps
+
+Support & maintenance
+
+Transformation digitale
+
+📌 Chaque service :
+
+Carte
+
+Icône
+
+Texte généré automatiquement
+
+👨‍💻 Équipe
+
+10 profils collaboratifs
+
+MAMBOU DIMITRI – Développeur Senior (obligatoire)
+
+Autres profils réalistes (CTO, Dev, UI/UX, QA…)
+
+📌 Photos depuis /assets/team/
+
+🚀 Rejoindre notre équipe
+Culture & environnement
+
+Challenges techniques
+
+Innovation récompensée
+
+Collaboration agile
+
+Impact local camerounais
+
+Avantages
+
+Formation continue
+
+Télétravail
+
+Bonus innovation
+
+Croissance rapide
+
+Formulaire candidature
+
+Nom
+
+Sexe
+
+Âge
+
+Ville
+
+Pays
+
+Téléphone
+
+Email
+
+CV PDF (upload EmailJS)
+
+📌 Contraintes :
+
+PDF uniquement
+
+Max 2MB
+
+Conversion Base64 JS
+
+Message succès / erreur
+
+📞 Contact & Devis
+
+Téléphone
+
+Email
+
+Adresse
+
+RC
+
+Formulaire :
+
+Nom
+
+Email
+
+Téléphone
+
+Objet
+
+Message
+
+Type (contact / devis)
+
+📌 Envoi via EmailJS → contact@batpro-sarl.com
+
+⭐ Avis & Témoignages
+
+Carousel MDB
+
+Témoignages fictifs réalistes
+
+Notes étoiles
+
+🤝 Partenaires
+
+Logos fictifs realistes d'enreprises de renom exisitantes 
+
+Institutions, ONG, startups camerounaises
+
+Grille responsive
+
+⚖️ Mentions légales
+
+Données officielles
+
+Responsabilité
+
+Politique de confidentialité basique
+
+✅ Footer global (component)
+
+Logo
+
+Description BAT PRO SARL
+
+Contacts
+
+Adresse
+
+Liens rapides
+
+Réseaux sociaux
+
+© BAT PRO SARL 2026 – Tous droits réservés
+
+6️⃣ Structure des fichiers
+/project-root
+│ index.html
+│ about.html
+│ services.html
+│ team.html
+│ careers.html
+│ testimonials.html
+│ partners.html
+│ contact.html
+│ legal.html
+│
+├── components/
+│   ├── header.html
+│   ├── footer.html
+│   ├── hero.html
+│   ├── cta.html
+│
+├── assets/
+│   ├── images/
+│   ├── team/
+│   ├── partners/
+│   ├── logo.png
+│   ├── favicon.ico
+│
+├── css/
+├── js/
+
+7️⃣ Instructions finales pour l’IA code
+
+👉 L’IA doit :
+
+Respecter une architecture modulaire
+
+Réutiliser les composants
+
+Générer tous les textes adaptés au Cameroun
+
+Ajouter images locales et CDN
+
+Implémenter animations et interactions
+
+Ne poser aucune question
+
+Produire un site prêt à déployer
+
+✅ CONCLUSION
+
+Ce site vitrine doit positionner BAT PRO SARL comme une entreprise technologique premium, crédible et innovante au Cameroun et en Afrique, avec un code propre, modulaire et professionnel.
+
+🚀 Prochaine étape possible
+
+Je peux maintenant te fournir :
+
+🔥 UN PROMPT UNIQUE “copier-coller” pour une IA de code
+
+🧱 Un squelette de projet modulaire prêt à coder
+
+📩 Le script EmailJS complet (contact + CV)
+
+Dis-moi ce que tu veux, on avance 🔥
+
