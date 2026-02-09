@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags -->
+    <title>Contact & Devis - BAT PRO SARL</title>
+    <meta name="description" content="Contactez BAT PRO SARL pour vos projets de développement d'applications, solutions digitales et demande de devis au Cameroun.">
+    <meta name="keywords" content="contact, devis, développement, Cameroun, BAT PRO SARL, solutions IT">
+    <meta name="author" content="BAT PRO SARL">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact & Devis - BAT PRO SARL">
+    <meta property="og:description" content="Contactez-nous pour vos projets de développement et transformation digitale">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://batpro-sarl.com/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon_final.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+    
+    <!-- Hero Section Component -->
+    <div id="hero"></div>
+    
+    <!-- Contact Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2 class="gradient-text">Contactez-Nous</h2>
+                <p>Nous sommes à votre écoute pour donner vie à vos projets technologiques</p>
+            </div>
+            
+            <!-- Contact Form Component -->
+            <div id="contact-form" class="animate-on-scroll"></div>
+            
+            <!-- Map Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="bg-white p-4 rounded-3 shadow animate-on-scroll">
+                        <h4 class="text-center mb-4">Notre Localisation</h4>
+                        <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3576052996286!2d11.502107575487572!3d3.8480312500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8K4NzQsODA5Ni5AeiK4NzQsNzgyMDA!5e0!3m2!1sfr!2scm!4v0!5m2!1sfr!2scm" 
+                                    width="600" 
+                                    height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="w-100 h-100">
+                            </iframe>
+                        </div>
+                        
+                        <!-- Additional Contact Info -->
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clock text-primary me-3 fa-lg"></i>
+                                    <div>
+                                        <h6 class="mb-1">Heures d'ouverture</h6>
+                                        <p class="mb-0 text-muted">Lun-Ven: 8h00-18h00<br>Sam: 9h00-14h00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-certificate text-primary me-3 fa-lg"></i>
+                                    <div>
+                                        <h6 class="mb-1">Registre de Commerce</h6>
+                                        <p class="mb-0 text-muted">RC/YAO/20/A/93 du 20/02/2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2 class="gradient-text">Questions Fréquentes</h2>
+                <p>Réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 animate-on-scroll">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#faq1">
+                                    Quels types de projets développez-vous ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-mdb-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous développons une large gamme de projets : sites web, applications mobiles natives et multiplateformes, 
+                                    solutions enterprise, systèmes de gestion, plateformes e-commerce, et solutions IoT adaptées au contexte africain.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 animate-on-scroll">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faq2">
+                                    Combien de temps prend un projet typique ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-mdb-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La durée varie selon la complexité : un site vitrice (2-4 semaines), application mobile simple (2-3 mois), 
+                                    système enterprise complexe (6-12 mois). Nous fournissons des délais précis après analyse détaillée de vos besoins.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 animate-on-scroll">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faq3">
+                                    Proposez-vous des services de maintenance ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-mdb-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, nous offrons des contrats de maintenance proactive, support technique 24/7 pour les applications critiques, 
+                                    et des mises à jour régulières pour garantir la sécurité et les performances de vos solutions.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 animate-on-scroll">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faq4">
+                                    Quelle est votre zone d'intervention ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-mdb-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Bien que basés à Yaoundé, nous intervenons dans tout le Cameroun et en Afrique centrale. 
+                                    Nous travaillons également avec des clients internationaux sur des projets distants grâce à nos méthodologies agiles.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 animate-on-scroll">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faq5">
+                                    Comment obtenir un devis pour mon projet ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-mdb-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Utilisez notre formulaire de contact en sélectionnant "Demande de devis" comme type. 
+                                    Décrivez votre projet en détail et nous vous enverrons une estimation personnalisée dans les 48h.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Banner Component -->
+    <div id="cta"></div>
+    
+    <!-- Footer Component -->
+    <div id="footer"></div>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/237653859912?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20mon%20projet" 
+       target="_blank" 
+       class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- MDB JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/components.js"></script>
+    <script src="js/emailjs.js"></script>
+    
+    <script>
+        // Initialisation des composants au chargement
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Charger le hero avec le contenu personnalisé
+            await loadHeroSection(
+                'Contactez-Nous<br>Pour Vos Projets',
+                'Discutons de vos besoins technologiques et transformons vos idées en solutions performantes.',
+                'Demander un Devis',
+                'Nous Appeler'
+            );
+            
+            // Charger le formulaire de contact
+            await loadContactForm();
+            
+            // Charger le CTA banner
+            await loadCTABanner(
+                'Prêt à Démarrer Votre Projet?',
+                'Notre équipe d\'experts est prête à transformer votre vision en réalité digitale.',
+                'Commencer Maintenant',
+                'Voir Nos Réalisations'
+            );
+        });
+    </script>
+</body>
+</html>

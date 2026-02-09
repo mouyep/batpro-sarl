@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+
+# Sitemap principal
+Sitemap: https://batpro-sarl.com/sitemap.xml
+
+# Bloquer les répertoires inutiles
+Disallow: /components/
+Disallow: /css/
+Disallow: /js/
+Disallow: /assets/
+
+# Autoriser les fichiers importants
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /careers.html
+Allow: /team.html
+Allow: /testimonials.html
+Allow: /partners.html
+Allow: /legal.html
+Allow: /assets/images/
+Allow: /assets/team/
+Allow: /assets/partners/
+Allow: /assets/logo.png
+Allow: /assets/favicon.ico
+
+# Bloquer les fichiers temporaires
+Disallow: /*.tmp$
+Disallow: /*.log$
+Disallow: /*.cache$
+
+# Délais d'exploration optimisé
+Crawl-delay: 1
+
+# Cibles spécifiques
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Paramètres d'indexation
+Host: https://batpro-sarl.com

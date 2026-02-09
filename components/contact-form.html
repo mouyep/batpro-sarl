@@ -1,0 +1,232 @@
+<!-- Contact Form Component - BAT PRO SARL -->
+<div class="contact-form-container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="contact-info bg-primary text-white p-4 rounded-3 h-100">
+                <h4 class="fw-bold mb-4">Informations de Contact</h4>
+                
+                <div class="contact-item mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt me-3 fa-lg"></i>
+                        <div>
+                            <h6 class="mb-1">Adresse</h6>
+                            <p class="mb-0">Yaoundé, quartier Nkolbisson<br>Cameroun</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-item mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-phone me-3 fa-lg"></i>
+                        <div>
+                            <h6 class="mb-1">Téléphone</h6>
+                            <p class="mb-0">+237 653 859 912</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-item mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope me-3 fa-lg"></i>
+                        <div>
+                            <h6 class="mb-1">Email</h6>
+                            <p class="mb-0">contact@batpro-sarl.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-item mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-clock me-3 fa-lg"></i>
+                        <div>
+                            <h6 class="mb-1">Horaires</h6>
+                            <p class="mb-0">Lun-Ven: 8h00-18h00<br>Sam: 9h00-14h00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links mt-4">
+                    <h6 class="mb-3">Suivez-nous</h6>
+                    <div class="d-flex gap-3">
+                        <a href="https://wa.me/237653859912" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="contact-form-wrapper bg-white p-4 rounded-3 shadow">
+                <h4 class="fw-bold mb-4">Envoyez-nous un Message</h4>
+                
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nom Complet *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Téléphone *</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="subject" class="form-label">Objet *</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="type" class="form-label">Type de demande *</label>
+                        <select class="form-select" id="type" name="type" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="contact">Contact</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="partnership">Partenariat</option>
+                            <option value="support">Support technique</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="consent" name="consent" required>
+                        <label class="form-check-label" for="consent">
+                            J'accepte que mes données soient utilisées pour me recontacter *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-danger btn-rounded w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-check-circle me-2"></i>Message Envoyé!
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Votre message a été envoyé avec succès. Nous vous contacterons dans les plus brefs délais.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-exclamation-circle me-2"></i>Erreur d'Envoi
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer ou nous contacter directement.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.contact-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #1976D2, #2196F3);
+}
+
+.contact-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #4CAF50 !important;
+}
+
+.contact-form-wrapper {
+    border: 1px solid #e0e0e0;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 12px 16px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #1976D2;
+    box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #F44336, #E53935);
+    border: none;
+    padding: 12px 24px;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #E53935, #D32F2F);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 2rem !important;
+    }
+}
+</style>

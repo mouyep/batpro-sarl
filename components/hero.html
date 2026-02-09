@@ -1,0 +1,135 @@
+<!-- Hero Section Component - BAT PRO SARL -->
+<section class="hero-section" style="
+    background: linear-gradient(135deg, rgba(25, 118, 210, 0.9), rgba(76, 175, 80, 0.9)), 
+                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content animate__animated animate__fadeInLeft">
+                    <h1 class="display-3 fw-bold text-white mb-4">
+                        <span id="heroTitle">L'Innovation Technologique<br>au Service de l'Afrique</span>
+                    </h1>
+                    <p class="lead text-white mb-4" id="heroSubtitle">
+                        BAT PRO SARL, votre partenaire de confiance pour des solutions digitales sur mesure, 
+                        adaptées aux réalités camerounaises et africaines.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#services" class="btn btn-success btn-lg btn-rounded" id="heroBtn1">
+                            <i class="fas fa-rocket me-2"></i>Nos Services
+                        </a>
+                        <a href="contact.html" class="btn btn-danger btn-lg btn-rounded" id="heroBtn2">
+                            <i class="fas fa-envelope me-2"></i>Nous Contacter
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <div class="text-center">
+                                <h3 class="text-white fw-bold">
+                                    <span class="counter" data-target="150">0</span>+
+                                </h3>
+                                <p class="text-white-50 small">Projets Réalisés</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-center">
+                                <h3 class="text-white fw-bold">
+                                    <span class="counter" data-target="50">0</span>+
+                                </h3>
+                                <p class="text-white-50 small">Clients Satisfaits</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-center">
+                                <h3 class="text-white fw-bold">
+                                    <span class="counter" data-target="5">0</span>
+                                </h3>
+                                <p class="text-white-50 small">Années d'Expérience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image animate__animated animate__fadeInRight">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-4 p-4">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Développement d'applications" 
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
+        <div class="text-white text-center">
+            <small class="d-block mb-2">Découvrir</small>
+            <i class="fas fa-chevron-down animate__animated animate__bounce animate__infinite"></i>
+        </div>
+    </div>
+</section>
+
+<style>
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(25, 118, 210, 0.8), rgba(76, 175, 80, 0.8));
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.counter {
+    display: inline-block;
+}
+
+.hero-image img {
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.scroll-indicator {
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 100px 0;
+    }
+    
+    .display-3 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
+</style>
