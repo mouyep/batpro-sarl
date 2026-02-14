@@ -113,51 +113,51 @@ async function loadHeroSection(title = null, subtitle = null, btn1Text = null, b
                 alert(btn1Text);
                 if(btn1Text == 'Découvrir')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     document.getElementById('details_section').scrollIntoView({behavior: 'smooth'});
                 });
 
                 if(btn1Text == 'Notre Équipe')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     window.location.href = '../team.html';
                 });
 
                 if(btn1Text == 'Voir nos projets')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     document.getElementById('details_section').scrollIntoView({behavior: 'smooth'});
                 });
 
                 if(btn1Text == 'Nous Rejoindre')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     window.location.href = '../careers.html';
                 });
 
                 if(btn1Text == 'Nous Contacter')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     window.location.href = '../contact.html';
                 });
 
 
                 if(btn1Text == 'Devenir Partenaire')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     window.location.href = '../contact.html#contact-form';
                 });
 
 
                 if(btn1Text == 'Postuler Maintenant')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     document.getElementById('apply-for-job').scrollIntoView({behavior: 'smooth'});
                 });
 
                 if(btn1Text == 'Demander un Devis')
                 btn1Element.addEventListener('click', function(){
-                    alert("clicked");
+                    
                     document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'});
                 });
 
